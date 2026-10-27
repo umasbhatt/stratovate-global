@@ -11,9 +11,10 @@
             theme: {
                 extend: {
                     colors: {
-                        royal: {
-                            800: '#1E3A8A',
-                            900: '#172554',
+                        blue: {
+                            600: '#2563EB',
+                            700: '#1D4ED8',
+                            900: '#1E3A8A', // Rich Deep Blue
                         },
                         gold: {
                             500: '#D4A017',
@@ -28,40 +29,40 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
         body { font-family: 'Inter', sans-serif; }
         .gradient-text {
-            background: linear-gradient(135deg, #172554 0%, #D4A017 100%);
+            background: linear-gradient(135deg, #1E3A8A 0%, #D4A017 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
         .executive-card {
             background: #FFFFFF;
             border: 1px solid #DBEAFE;
-            box-shadow: 0 10px 25px -5px rgba(23, 37, 84, 0.05), 0 8px 10px -6px rgba(23, 37, 84, 0.05);
+            box-shadow: 0 10px 25px -5px rgba(30, 58, 138, 0.06), 0 8px 10px -6px rgba(30, 58, 138, 0.06);
         }
-        .blue-card {
-            background: #172554;
-            color: #F8FAFC;
+        .blue-banner {
+            background: #1E3A8A;
+            color: #FFFFFF;
         }
     </style>
 </head>
-<body class="bg-white text-slate-800 antialiased selection:bg-gold-500 selection:text-white">
+<body class="bg-white text-slate-700 antialiased selection:bg-gold-500 selection:text-white">
 
     <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-blue-100">
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md border-b border-blue-100">
         <div class="max-w-7xl mx-auto px-6 lg:px-12">
             <div class="flex items-center justify-between h-20">
                 <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-xl bg-royal-900 text-gold-500 flex items-center justify-center font-black text-xl shadow-md">
+                    <div class="w-10 h-10 rounded-xl bg-blue-900 text-gold-500 flex items-center justify-center font-black text-xl shadow-md">
                         S
                     </div>
-                    <span class="text-xl font-extrabold tracking-wider text-royal-900">STRATOVATE <span class="text-gold-600 font-light">GLOBAL</span></span>
+                    <span class="text-xl font-extrabold tracking-wider text-blue-900">STRATOVATE <span class="text-gold-600 font-light">GLOBAL</span></span>
                 </div>
                 <div class="hidden md:block">
                     <div class="flex items-center space-x-10 text-sm font-medium">
-                        <a href="#about" class="text-slate-600 hover:text-royal-900 transition">Founder</a>
-                        <a href="#programs" class="text-slate-600 hover:text-royal-900 transition">Workshops</a>
-                        <a href="#simulator" class="text-slate-600 hover:text-royal-900 transition">ROI Calculator</a>
-                        <a href="#impact" class="text-slate-600 hover:text-royal-900 transition">Methodology</a>
-                        <a href="#contact" class="bg-royal-900 hover:bg-royal-800 text-gold-500 px-6 py-2.5 rounded-xl font-bold transition shadow-md">Book Session</a>
+                        <a href="#about" class="text-slate-600 hover:text-blue-900 transition">Founder</a>
+                        <a href="#programs" class="text-slate-600 hover:text-blue-900 transition">Workshops</a>
+                        <a href="#simulator" class="text-slate-600 hover:text-blue-900 transition">ROI Calculator</a>
+                        <a href="#impact" class="text-slate-600 hover:text-blue-900 transition">Methodology</a>
+                        <a href="#contact" class="bg-blue-900 hover:bg-blue-800 text-gold-400 px-6 py-2.5 rounded-xl font-bold transition shadow-md">Book Session</a>
                     </div>
                 </div>
             </div>
@@ -69,14 +70,14 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative pt-40 pb-20 md:pt-48 md:pb-28 overflow-hidden text-center bg-gradient-to-b from-blue-50/50 to-white">
+    <section class="relative pt-40 pb-20 md:pt-48 md:pb-28 overflow-hidden text-center bg-gradient-to-b from-blue-50/60 to-white">
         <div class="max-w-4xl mx-auto px-6 relative z-10 space-y-6">
             
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-100 border border-blue-200 text-royal-900 text-xs font-bold uppercase tracking-widest">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-100/80 border border-blue-200 text-blue-900 text-xs font-bold uppercase tracking-widest">
                 <i class="fa-solid fa-location-dot text-xs text-gold-600"></i> Singapore & Regional Executive AI Training
             </div>
             
-            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black text-royal-900 tracking-tight leading-tight">
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black text-blue-900 tracking-tight leading-tight">
                 Quantitative Rigor Meets <span class="gradient-text">Enterprise AI Execution.</span>
             </h1>
             
@@ -85,5 +86,92 @@
             </p>
             
             <div class="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                <a href="#programs" class="bg-royal-900 hover:bg-royal-800 text-white px-8 py-4 rounded-xl font-extrabold flex items-center justify-center gap-3 shadow-xl transition">
-                    Explore Programmes <i class="fa-solid fa-arrow-right text-
+                <a href="#programs" class="bg-blue-900 hover:bg-blue-800 text-white px-8 py-4 rounded-xl font-extrabold flex items-center justify-center gap-3 shadow-xl shadow-blue-900/10 transition">
+                    Explore Programmes <i class="fa-solid fa-arrow-right text-sm text-gold-500"></i>
+                </a>
+                <a href="#contact" class="bg-white hover:bg-blue-50 text-blue-900 px-8 py-4 rounded-xl font-semibold border border-blue-200 flex items-center justify-center transition shadow-sm">
+                    Request Programme Outline
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Executive Founder Spotlight Section -->
+    <section id="about" class="py-16 bg-white border-y border-blue-100">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="executive-card p-8 md:p-12 rounded-3xl">
+                <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                    
+                    <!-- Portrait -->
+                    <div class="shrink-0 text-center">
+                        <img src="Uma.jpeg" alt="Dr. Uma Bhatt" class="w-32 h-32 md:w-36 md:h-36 rounded-full object-cover border-4 border-gold-500 shadow-xl mx-auto">
+                        <h3 class="text-xl font-extrabold text-blue-900 mt-4">Dr. Uma Bhatt</h3>
+                        <p class="text-gold-600 text-xs font-semibold mt-0.5">Founder & Managing Director</p>
+                    </div>
+
+                    <!-- Clean Bio & Validated Metrics -->
+                    <div class="space-y-4 text-center md:text-left">
+                        <p class="text-sm text-slate-700 leading-relaxed font-normal">
+                            Former Global Tech Executive with 20+ years leading large-scale enterprise transformations, AI execution, and regional operating models across APAC and global markets.
+                        </p>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+                            <div class="bg-blue-50/70 p-3.5 rounded-xl border border-blue-100 text-center">
+                                <div class="text-blue-900 font-extrabold text-base">10,000+ Users</div>
+                                <div class="text-[11px] text-slate-600 mt-0.5">NPS Flipped from -56% to +27%</div>
+                            </div>
+                            <div class="bg-blue-50/70 p-3.5 rounded-xl border border-blue-100 text-center">
+                                <div class="text-blue-900 font-extrabold text-base">Ph.D. + MIT ML</div>
+                                <div class="text-[11px] text-slate-600 mt-0.5">Statistics & Data Science</div>
+                            </div>
+                            <div class="bg-blue-50/70 p-3.5 rounded-xl border border-blue-100 text-center">
+                                <div class="text-blue-900 font-extrabold text-base">Six Sigma Black Belt</div>
+                                <div class="text-[11px] text-slate-600 mt-0.5">Process Excellence</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Programmes Section -->
+    <section id="programs" class="py-24 bg-blue-50/40">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-gold-600 mb-3">Stratovate Programmes</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-blue-900">Executive AI Workshops & Bootcamps</h3>
+                <p class="text-slate-600 mt-4 text-base font-normal">Structured, actionable training designed for rapid adoption, complete with sample agendas and governance frameworks.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Programme 1 -->
+                <div class="executive-card p-8 rounded-3xl flex flex-col justify-between border-2 border-gold-500 relative shadow-xl">
+                    <div class="absolute -top-3.5 right-8 bg-gold-500 text-blue-900 text-[10px] font-black tracking-wider px-3 py-1 rounded-full uppercase shadow-md">Most Requested</div>
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-blue-900 text-gold-500 flex items-center justify-center text-2xl font-bold mb-6">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-blue-900 mb-2">Copilot & GenAI Field Enablement</h4>
+                        <p class="text-xs text-gold-600 font-semibold mb-4">Format: Half-Day Intensive or 2-Day Workshop</p>
+                        <p class="text-sm text-slate-600 mb-6 leading-relaxed">
+                            Practical enablement for commercial, sales, and operations teams. Harness Microsoft Copilot, prompt engineering, and workflow automation.
+                        </p>
+                        <ul class="text-xs text-slate-700 space-y-3 mb-8">
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-600"></i> Microsoft Copilot Integration</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-600"></i> Advanced Applied Prompting</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-600"></i> Daily Task & Workflow Automation</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="w-full text-center bg-blue-900 hover:bg-blue-800 text-gold-400 font-extrabold py-3.5 rounded-xl text-sm transition shadow-md">Book Team Enablement</a>
+                </div>
+
+                <!-- Programme 2 -->
+                <div class="executive-card p-8 rounded-3xl flex flex-col justify-between hover:border-gold-500 transition duration-300">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-blue-900 text-gold-500 flex items-center justify-center text-2xl font-bold mb-6">
+                            <i class="fa-solid fa-chess-king"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-blue-900 mb-2">C-Suite AI Strategy & Governance</h4>

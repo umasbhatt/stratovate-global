@@ -11,18 +11,8 @@
             theme: {
                 extend: {
                     colors: {
-                        navy: {
-                            800: '#0B192C',
-                            900: '#030A16',
-                        },
-                        gold: {
-                            400: '#F3C623',
-                            500: '#D4A017',
-                        },
-                        slate: {
-                            800: '#1E293B',
-                            900: '#0F172A',
-                        }
+                        navy: { 800: '#0B192C', 900: '#030A16' },
+                        gold: { 400: '#F3C623', 500: '#D4A017' }
                     }
                 }
             }
@@ -37,7 +27,7 @@
             -webkit-text-fill-color: transparent;
         }
         .glass-card {
-            background: rgba(30, 41, 59, 0.6);
+            background: rgba(30, 41, 59, 0.5);
             backdrop-filter: blur(16px);
             border: 1px solid rgba(255, 255, 255, 0.08);
         }
@@ -68,25 +58,385 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="relative pt-36 pb-24 md:pt-48 md:pb-36 overflow-hidden">
+    <!-- Clean, Spacious Hero Section -->
+    <section class="relative pt-40 pb-20 md:pt-52 md:pb-28 overflow-hidden text-center">
         <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/20 via-navy-900 to-navy-900 z-0"></div>
-        <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-                
-                <!-- Left Column: High-Impact Copy -->
-                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
-                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs font-bold uppercase tracking-widest">
-                        <i class="fa-solid fa-sparkles text-xs"></i> Enterprise AI Leadership
+        <div class="max-w-4xl mx-auto px-6 relative z-10 space-y-8">
+            
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs font-bold uppercase tracking-widest">
+                <i class="fa-solid fa-sparkles text-xs"></i> Enterprise AI Leadership & Transformation
+            </div>
+            
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black text-white tracking-tight leading-tight">
+                Quantitative Rigor Meets <span class="gradient-text">Enterprise AI Execution.</span>
+            </h1>
+            
+            <p class="text-lg sm:text-xl text-slate-300 font-normal leading-relaxed max-w-2xl mx-auto">
+                High-impact executive training, masterclasses, and advisory to scale GenAI, Copilot, and governance safely across enterprises and growing businesses.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+                <a href="#programs" class="bg-gold-500 hover:bg-gold-400 text-navy-900 px-8 py-4 rounded-xl font-extrabold flex items-center justify-center gap-3 shadow-xl shadow-gold-500/20 transition">
+                    Explore Programs <i class="fa-solid fa-arrow-right text-sm"></i>
+                </a>
+                <a href="#contact" class="glass-card hover:bg-slate-800 text-white px-8 py-4 rounded-xl font-semibold border border-slate-700 flex items-center justify-center transition">
+                    Request Brochure
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Executive Founder Spotlight Section -->
+    <section id="about" class="py-16 bg-navy-800/40 border-y border-slate-800/80">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="glass-card p-8 md:p-12 rounded-3xl border border-slate-700/80 bg-slate-900/80">
+                <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                    
+                    <!-- Portrait -->
+                    <div class="shrink-0 text-center">
+                        <img src="Uma.jpeg" alt="Dr. Uma Bhatt" class="w-32 h-32 md:w-36 md:h-36 rounded-full object-cover border-4 border-gold-400 shadow-2xl mx-auto">
+                        <h3 class="text-xl font-extrabold text-white mt-4">Dr. Uma Bhatt</h3>
+                        <p class="text-gold-400 text-xs font-semibold mt-0.5">Founder & Managing Director</p>
                     </div>
-                    
-                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.15]">
-                        Bridging <span class="gradient-text">Quantitative Rigor</span> with AI Execution.
-                    </h1>
-                    
-                    <p class="text-lg sm:text-xl text-slate-300 max-w-2xl font-normal leading-relaxed">
-                        High-impact C-suite training, masterclasses, and advisory to scale GenAI, Copilot, and governance safely—built for enterprises and growing businesses.
+
+                    <!-- Clean Bio & Scannable Badges -->
+                    <div class="space-y-4 text-center md:text-left">
+                        <p class="text-sm text-slate-300 leading-relaxed font-normal">
+                            Former Global Tech Executive with 20+ years leading large-scale enterprise transformations, AI execution, and regional operating models across global markets.
+                        </p>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+                            <div class="bg-navy-900/90 p-3 rounded-xl border border-slate-800 text-center">
+                                <div class="text-gold-400 font-bold text-sm">10,000+ Users</div>
+                                <div class="text-[11px] text-slate-400 mt-0.5">GenAI & Copilot Scaled</div>
+                            </div>
+                            <div class="bg-navy-900/90 p-3 rounded-xl border border-slate-800 text-center">
+                                <div class="text-gold-400 font-bold text-sm">Ph.D. + MIT ML</div>
+                                <div class="text-[11px] text-slate-400 mt-0.5">Statistics & Data Science</div>
+                            </div>
+                            <div class="bg-navy-900/90 p-3 rounded-xl border border-slate-800 text-center">
+                                <div class="text-gold-400 font-bold text-sm">Six Sigma Black Belt</div>
+                                <div class="text-[11px] text-slate-400 mt-0.5">Responsible AI Governance</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Executive Stats Bar -->
+    <section class="bg-navy-900 py-16">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-3xl md:text-5xl font-black text-gold-400">20+ Yrs</div>
+                    <div class="text-xs md:text-sm text-slate-400 font-medium mt-1">Global Tech Leadership</div>
+                </div>
+                <div>
+                    <div class="text-3xl md:text-5xl font-black text-white">10,000+</div>
+                    <div class="text-xs md:text-sm text-slate-400 font-medium mt-1">AI Users Enablement</div>
+                </div>
+                <div>
+                    <div class="text-3xl md:text-5xl font-black text-gold-400">Ph.D.</div>
+                    <div class="text-xs md:text-sm text-slate-400 font-medium mt-1">Statistics & Data Science</div>
+                </div>
+                <div>
+                    <div class="text-3xl md:text-5xl font-black text-white">+83%</div>
+                    <div class="text-xs md:text-sm text-slate-400 font-medium mt-1">NPS Efficiency Boost</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Programs Section -->
+    <section id="programs" class="py-24 bg-navy-800/40 border-t border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-gold-400 mb-3">Stratovate Programs</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Executive AI Workshops & Bootcamps</h3>
+                <p class="text-slate-400 mt-4 text-base font-normal">Practical frameworks to transition your leadership and operations into AI-enabled capability centers.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Program 1 -->
+                <div class="glass-card p-8 rounded-3xl flex flex-col justify-between hover:border-gold-500/50 transition duration-300">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-gold-500/10 text-gold-400 flex items-center justify-center text-2xl font-bold mb-6">
+                            <i class="fa-solid fa-chess-king"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">C-Suite AI Strategy & Governance</h4>
+                        <p class="text-sm text-slate-300 mb-6 leading-relaxed">
+                            For executive boards and leadership teams. Establish Responsible AI guardrails, prioritize high-ROI initiatives, and lead organizational change.
+                        </p>
+                        <ul class="text-xs text-slate-400 space-y-3 mb-8">
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> Enterprise AI Ethics & Risk Controls</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> Executive Roadmap & Investment ROI</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> Change Leadership for AI Adoption</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="w-full text-center bg-slate-800 hover:bg-gold-500 hover:text-navy-900 text-white font-bold py-3.5 rounded-xl text-sm transition">Inquire for C-Suite</a>
+                </div>
+
+                <!-- Program 2 -->
+                <div class="glass-card p-8 rounded-3xl flex flex-col justify-between border-2 border-gold-500/50 relative shadow-2xl">
+                    <div class="absolute -top-3.5 right-8 bg-gold-500 text-navy-900 text-[10px] font-black tracking-wider px-3 py-1 rounded-full uppercase shadow-md">Featured Program</div>
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-gold-500/10 text-gold-400 flex items-center justify-center text-2xl font-bold mb-6">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">Copilot & GenAI Field Enablement</h4>
+                        <p class="text-sm text-slate-300 mb-6 leading-relaxed">
+                            Actionable enablement for commercial, operations, and business teams. Harness Copilot, prompt engineering, and daily task automation.
+                        </p>
+                        <ul class="text-xs text-slate-400 space-y-3 mb-8">
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> Microsoft Copilot Integration</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> Advanced Applied Prompting</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> Operational Workflow Automation</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="w-full text-center bg-gold-500 hover:bg-gold-400 text-navy-900 font-extrabold py-3.5 rounded-xl text-sm transition shadow-lg shadow-gold-500/20">Book Team Enablement</a>
+                </div>
+
+                <!-- Program 3 -->
+                <div class="glass-card p-8 rounded-3xl flex flex-col justify-between hover:border-gold-500/50 transition duration-300">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-gold-500/10 text-gold-400 flex items-center justify-center text-2xl font-bold mb-6">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">Operational Data & Process Excellence</h4>
+                        <p class="text-sm text-slate-300 mb-6 leading-relaxed">
+                            Combine analytical precision with process improvement. Build scalable data assets, eliminate waste, and optimize unit productivity.
+                        </p>
+                        <ul class="text-xs text-slate-400 space-y-3 mb-8">
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> Lean Six Sigma Process Improvement</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> Data Infrastructure Alignment</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> Efficiency Scorecards & Metrics</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="w-full text-center bg-slate-800 hover:bg-gold-500 hover:text-navy-900 text-white font-bold py-3.5 rounded-xl text-sm transition">Inquire for Strategy</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry-Agnostic ROI Simulator -->
+    <section id="simulator" class="py-24 bg-navy-900 border-y border-slate-800/80">
+        <div class="max-w-5xl mx-auto px-6 lg:px-12">
+            <div class="text-center mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-gold-400 mb-2">Quantified Impact</h2>
+                <h3 class="text-3xl font-extrabold text-white">AI Capacity & Productivity Simulator</h3>
+                <p class="text-slate-400 mt-2 text-sm">Estimate annual productive hours reclaimed across your workforce post-enablement.</p>
+            </div>
+
+            <div class="glass-card p-10 rounded-3xl border border-slate-700/80">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between text-xs font-semibold text-slate-300 mb-2">
+                                <span>Workforce Size:</span>
+                                <span id="team-size-val" class="text-gold-400 font-bold">50 employees</span>
+                            </div>
+                            <input id="team-size" type="range" min="5" max="500" value="50" class="w-full accent-gold-500 bg-slate-800 h-2 rounded-lg cursor-pointer">
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs font-semibold text-slate-300 mb-2">
+                                <span>Weekly Admin Hours per Employee:</span>
+                                <span id="hours-val" class="text-gold-400 font-bold">10 hrs</span>
+                            </div>
+                            <input id="hours" type="range" min="2" max="25" value="10" class="w-full accent-gold-500 bg-slate-800 h-2 rounded-lg cursor-pointer">
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs font-semibold text-slate-300 mb-2">
+                                <span>Target AI Productivity Gain:</span>
+                                <span id="efficiency-val" class="text-gold-400 font-bold">20%</span>
+                            </div>
+                            <input id="efficiency" type="range" min="10" max="50" value="20" class="w-full accent-gold-500 bg-slate-800 h-2 rounded-lg cursor-pointer">
+                        </div>
+                    </div>
+
+                    <div class="bg-navy-900/90 p-8 rounded-2xl border border-slate-800 text-center space-y-6">
+                        <div>
+                            <p class="text-xs text-slate-400 uppercase font-bold tracking-wider">Annual Reclaimed Capacity</p>
+                            <div id="result-hours" class="text-4xl sm:text-5xl font-black text-gold-400 mt-2">5,200 hrs</div>
+                        </div>
+                        <div class="border-t border-slate-800/80 pt-5">
+                            <p class="text-xs text-slate-400 uppercase font-bold tracking-wider">Estimated Equivalent Capacity Value</p>
+                            <div id="result-value" class="text-3xl font-extrabold text-white mt-1">$156,000 / yr</div>
+                        </div>
+                        <p class="text-[10px] text-slate-500 italic">*Based on standard 52-week work cycles and a baseline loaded operational rate of $30/hr.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Framework Section -->
+    <section id="impact" class="py-24 bg-navy-800/40">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-6">
+                    <span class="text-xs font-bold uppercase tracking-widest text-gold-400">Methodology</span>
+                    <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Pragmatic Science Meets Business Execution</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Many corporate AI trainings focus purely on theoretical concepts. Stratovate Global leverages a unique combination of advanced quantitative research and real-world executive execution across global enterprise and SME environments.
                     </p>
                     
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
-                        <a href="#programs" class
+                    <div class="space-y-5 pt-3">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-gold-500/10 text-gold-400 flex items-center justify-center shrink-0 font-bold text-base">1</div>
+                            <div>
+                                <h5 class="font-bold text-white text-base">Responsible AI-by-Design</h5>
+                                <p class="text-xs text-slate-400 mt-1">Embedding compliance, data privacy, and risk governance into operational workflows.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-gold-500/10 text-gold-400 flex items-center justify-center shrink-0 font-bold text-base">2</div>
+                            <div>
+                                <h5 class="font-bold text-white text-base">Metrics-Driven Adoption</h5>
+                                <p class="text-xs text-slate-400 mt-1">Utilizing Six Sigma frameworks to measure, track, and sustain productivity gains.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-gold-500/10 text-gold-400 flex items-center justify-center shrink-0 font-bold text-base">3</div>
+                            <div>
+                                <h5 class="font-bold text-white text-base">Scalable Execution</h5>
+                                <p class="text-xs text-slate-400 mt-1">Tailoring enablement programs for both fast-moving SMEs and matrixed enterprises.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-5">
+                    <div class="glass-card p-6 rounded-2xl border-l-4 border-l-gold-500 space-y-2">
+                        <i class="fa-solid fa-award text-gold-400 text-2xl"></i>
+                        <h6 class="font-bold text-white">Award Finalist</h6>
+                        <p class="text-xs text-slate-400">Digital Transformation Leader of the Year.</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl border-l-4 border-l-gold-500 space-y-2">
+                        <i class="fa-solid fa-graduation-cap text-gold-400 text-2xl"></i>
+                        <h6 class="font-bold text-white">MIT Certified</h6>
+                        <p class="text-xs text-slate-400">Machine Learning & Advanced Modeling.</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl border-l-4 border-l-gold-500 space-y-2">
+                        <i class="fa-solid fa-certificate text-gold-400 text-2xl"></i>
+                        <h6 class="font-bold text-white">Six Sigma Black Belt</h6>
+                        <p class="text-xs text-slate-400">Process excellence & quality controls.</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl border-l-4 border-l-gold-500 space-y-2">
+                        <i class="fa-solid fa-users-gear text-gold-400 text-2xl"></i>
+                        <h6 class="font-bold text-white">SAFe® 5 Agilist</h6>
+                        <p class="text-xs text-slate-400">Scaled agile frameworks for matrixed orgs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking & Contact Section -->
+    <section id="contact" class="py-24 bg-navy-900 border-t border-slate-800/80">
+        <div class="max-w-4xl mx-auto px-6 lg:px-12">
+            <div class="text-center mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-gold-400 mb-2">Connect With Us</h2>
+                <h3 class="text-3xl font-extrabold text-white">Book a Workshop or Executive Session</h3>
+                <p class="text-slate-400 mt-2 text-sm">Empower your leaders and teams with structured AI capability programs.</p>
+            </div>
+
+            <div class="glass-card p-10 rounded-3xl border border-slate-700/80">
+                <form id="contact-form" class="space-y-6" onsubmit="event.preventDefault(); alert('Thank you for reaching out to Stratovate Global! We will get back to you shortly.');">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Full Name</label>
+                            <input type="text" required placeholder="Jane Doe" class="w-full bg-navy-900 border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-gold-500">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Corporate Email</label>
+                            <input type="email" required placeholder="jane@company.com" class="w-full bg-navy-900 border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-gold-500">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Organization Name</label>
+                            <input type="text" required placeholder="Company / Enterprise Name" class="w-full bg-navy-900 border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-gold-500">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Engagement Interest</label>
+                            <select class="w-full bg-navy-900 border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-gold-500">
+                                <option>C-Suite AI Strategy & Governance</option>
+                                <option>Copilot & GenAI Field Enablement</option>
+                                <option>Operational Data Strategy Workshop</option>
+                                <option>Executive Keynote Address</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 mb-2">Scope / Workshop Goals</label>
+                        <textarea rows="4" placeholder="Share your estimated team size, goals, or upcoming AI transformation plans..." class="w-full bg-navy-900 border border-slate-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-gold-500"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-gold-500 hover:bg-gold-400 text-navy-900 font-extrabold py-4 rounded-xl transition shadow-xl shadow-gold-500/20 text-base">
+                        Submit Workshop Inquiry
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-900 border-t border-slate-800/80 py-12 text-slate-400 text-xs">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-gold-500 text-navy-900 font-bold flex items-center justify-center">S</div>
+                <span class="text-white font-bold">Stratovate Global</span>
+                <span class="text-slate-600">|</span>
+                <span>Singapore</span>
+            </div>
+            <div class="flex gap-6">
+                <a href="https://www.linkedin.com/in/umabhatt/" target="_blank" class="hover:text-gold-400 transition"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                <a href="mailto:uma.bhatt@outlook.com" class="hover:text-gold-400 transition"><i class="fa-solid fa-envelope text-lg"></i></a>
+            </div>
+            <div>
+                © 2026 Stratovate Global. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Script -->
+    <script>
+        const teamInput = document.getElementById('team-size');
+        const hoursInput = document.getElementById('hours');
+        const effInput = document.getElementById('efficiency');
+
+        const teamVal = document.getElementById('team-size-val');
+        const hoursVal = document.getElementById('hours-val');
+        const effVal = document.getElementById('efficiency-val');
+
+        const resultHours = document.getElementById('result-hours');
+        const resultValue = document.getElementById('result-value');
+
+        function updateCalculator() {
+            const team = parseInt(teamInput.value);
+            const hours = parseInt(hoursInput.value);
+            const eff = parseInt(effInput.value) / 100;
+
+            teamVal.textContent = team.toLocaleString() + ' employees';
+            hoursVal.textContent = hours + ' hrs';
+            effVal.textContent = Math.round(eff * 100) + '%';
+
+            const savedHoursPerWeek = team * hours * eff;
+            const savedHoursPerYear = Math.round(savedHoursPerWeek * 52);
+            const valueEquiv = Math.round(savedHoursPerYear * 30);
+
+            resultHours.textContent = savedHoursPerYear.toLocaleString() + ' hrs';
+            resultValue.textContent = '$' + valueEquiv.toLocaleString() + ' / yr';
+        }
+
+        teamInput.addEventListener('input', updateCalculator);
+        hoursInput.addEventListener('input', updateCalculator);
+        effInput.addEventListener('input', updateCalculator);
+    </script>
+</body>
+</html>
